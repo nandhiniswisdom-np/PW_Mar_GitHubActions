@@ -15,6 +15,4 @@ test('Create Contact and push code to GitHub', async ({ page }) => {
   await page.locator('.smallSubmit').click();
   const LName = await page.locator('#viewLead_lastName_sp').innerText();
   console.log(LName);
-  console.log(page.url());
-  console.log(page.title());
 })

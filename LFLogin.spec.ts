@@ -6,6 +6,4 @@ test('Login to LeafTap and push code to GitHub', async ({ page }) => {
   await page.locator('#password').fill('crmsfa');
   await page.locator('.decorativeSubmit').click();
   await page.locator('//a[contains(text(),"CRM")]').click();
-  console.log(page.url());
-  console.log(page.title());
 })
