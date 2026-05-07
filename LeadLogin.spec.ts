@@ -9,5 +9,4 @@ test('Create lead and push code to GitHub', async ({ page }) => {
   //const Title = await page.title();
   //console.log(Title);
   console.log(page.url());
-
 })
