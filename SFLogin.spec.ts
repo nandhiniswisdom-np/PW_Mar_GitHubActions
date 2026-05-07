@@ -7,4 +7,6 @@ test("Login to SF and push the code to GitHub", async({page})=>
     await page.locator("#Login").click();
     await page.waitForTimeout(5000);
     console.log(page.url());
+    const Title = await page.title();
+    console.log(Title);
 })
