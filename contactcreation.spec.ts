@@ -6,8 +6,6 @@ test('Create Contact and push code to GitHub', async ({ page }) => {
   await page.locator('#password').fill('crmsfa');
   await page.locator('.decorativeSubmit').click();
   await page.locator('//a[contains(text(),"CRM")]').click();
-  //const Title = await page.title();
-  //console.log(Title);
   console.log(page.url());
   await page.locator('//a[text()="Leads"]').click();
   await page.locator('//a[text()="Create Lead"]').click();
@@ -18,4 +16,5 @@ test('Create Contact and push code to GitHub', async ({ page }) => {
   const LName = await page.locator('#viewLead_lastName_sp').innerText();
   console.log(LName);
   console.log(page.url());
+  console.log(page.title());
 })

@@ -1,5 +1,5 @@
 import { test } from '@playwright/test'
-test('Login to LF and push code to GitHub', async ({ page }) => {
+test('Login to LeafTap and push code to GitHub', async ({ page }) => {
   //launching URL
   await page.goto("https://leaftaps.com/opentaps/control/main");
   await page.locator('#username').fill('democsr2')
