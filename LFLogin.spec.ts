@@ -6,7 +6,6 @@ test('Login to LF and push code to GitHub', async ({ page }) => {
   await page.locator('#password').fill('crmsfa');
   await page.locator('.decorativeSubmit').click();
   await page.locator('//a[contains(text(),"CRM")]').click();
-  //const Title = await page.title();
-  //console.log(Title);
   console.log(page.url());
+  console.log(page.title());
 })
